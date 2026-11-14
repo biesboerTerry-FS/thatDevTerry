@@ -7,7 +7,7 @@ export const projects = [
 		title: "Lindbergh Ultimate",
 		description: "A site for Lindbergh Ultimate with a public page and admin login.",
 		url: "https://brisk-tuba-bxj90bu.tmp.now",
-		repo: "https://github.com/thatdevterry/lindbergh-ultimate",
+		repo: "https://github.com/biesboerTerry-FS/lindberghUltimate",
 		image: projectOneImage,
 		tags: ["React", "CSS"],
 		links: [
@@ -18,12 +18,13 @@ export const projects = [
 		],
 	},
 	{
-		title: "Project Two",
-		description: "Placeholder description. Replace with a short summary of this site.",
-		url: "https://example.com",
-		repo: "https://github.com/thatdevterry/project-two",
+		title: "Diary",
+		description:
+			"A diary and journaling app built with Next.js for writing and keeping personal entries.",
+		url: "https://diary-2jv99sgyx-terry-biesboers-projects.vercel.app",
+		repo: "https://github.com/biesboerTerry-FS/Diary",
 		image: placeholderImage,
-		tags: ["Node.js", "Express"],
+		tags: ["Next.js", "JavaScript", "React"],
 	},
 	{
 		title: "Project Three",
@@ -45,7 +46,7 @@ export const projects = [
 		title: "Tomato",
 		description: "A food ordering site with menu browsing, cart, and app download sections.",
 		url: "https://tomato-dqkd.vercel.app",
-		repo: "https://github.com/thatdevterry/tomato",
+		repo: "https://github.com/biesboerTerry-FS/Tomato",
 		image: tomatoImage,
 		tags: ["React", "Vercel", "Demo"],
 		links: [
