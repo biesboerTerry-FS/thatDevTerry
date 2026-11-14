@@ -640,6 +640,7 @@ img {
 .projectImage {
 	aspect-ratio: 16 / 10;
 	overflow: hidden;
+	border: 2px solid $pink;
 
 	img {
 		width: 100%;
@@ -745,6 +746,7 @@ img {
 	aspect-ratio: 16 / 10;
 	object-fit: cover;
 	display: block;
+	border: 2px solid $pink;
 }
 
 .modalBody {
