@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1a1a1a"/>
+  <rect x="24" y="24" width="752" height="452" fill="none" stroke="#ff4fa3" stroke-width="4" stroke-dasharray="16 12"/>
+  <text x="400" y="240" font-family="Urbanist, sans-serif" font-size="48" fill="#ff4fa3" text-anchor="middle">Project Screenshot</text>
+  <text x="400" y="290" font-family="Urbanist, sans-serif" font-size="24" fill="#888" text-anchor="middle">replace with your site image</text>
+</svg>
