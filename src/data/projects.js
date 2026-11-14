@@ -1,6 +1,7 @@
 import placeholderImage from "../images/placeholder.svg";
 import tomatoImage from "../images/tomato.jpg";
 import projectOneImage from "../images/project-one.jpg";
+import diaryImage from "../images/diary.jpg";
 
 export const projects = [
 	{
@@ -20,10 +21,10 @@ export const projects = [
 	{
 		title: "Diary",
 		description:
-			"A diary and journaling app built with Next.js for writing and keeping personal entries.",
+			"A personal diary site built with Next.js, featuring dated entries and sections like Archive, About, Projects, and Now.",
 		url: "https://diary-2jv99sgyx-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Diary",
-		image: placeholderImage,
+		image: diaryImage,
 		tags: ["Next.js", "JavaScript", "React"],
 	},
 	{
