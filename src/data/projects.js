@@ -4,6 +4,7 @@ import projectOneImage from "../images/project-one.jpg";
 import diaryImage from "../images/diary.jpg";
 import foreverImage from "../images/forever.jpg";
 import pokeAppImage from "../images/thepokeapp.jpg";
+import portfolioThumbnail from "../images/portfolio-thumbnail.jpg";
 
 export const projects = [
 	{
@@ -68,12 +69,13 @@ export const projects = [
 		],
 	},
 	{
-		title: "Demo Site Six",
-		description: "Placeholder demo site. Replace with a short summary of this site.",
-		url: "https://example.com",
-		repo: "https://github.com/thatdevterry/demo-site-six",
-		image: placeholderImage,
-		tags: ["Node.js", "MongoDB"],
+		title: "thatDevTerry Portfolio",
+		description:
+			"My personal portfolio site showcasing projects, skills, and contact information.",
+		url: "https://github.com/biesboerTerry-FS/thatDevTerry",
+		repo: "https://github.com/biesboerTerry-FS/thatDevTerry",
+		image: portfolioThumbnail,
+		tags: ["React", "SCSS", "Portfolio"],
 	},
 	{
 		title: "Demo Site Seven",

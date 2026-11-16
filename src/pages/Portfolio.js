@@ -8,7 +8,7 @@ const Portfolio = () => {
 	const closeButtonRef = useRef(null);
 
 	useEffect(() => {
-		document.title = "Portfolio | Terence Biesboer";
+		document.title = "Portfolio | Terry Biesboer";
 	}, []);
 
 	useEffect(() => {
