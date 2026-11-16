@@ -2,6 +2,8 @@ import placeholderImage from "../images/placeholder.svg";
 import tomatoImage from "../images/tomato.jpg";
 import projectOneImage from "../images/project-one.jpg";
 import diaryImage from "../images/diary.jpg";
+import foreverImage from "../images/forever.jpg";
+import pokeAppImage from "../images/thepokeapp.jpg";
 
 export const projects = [
 	{
@@ -28,20 +30,28 @@ export const projects = [
 		tags: ["Next.js", "JavaScript", "React"],
 	},
 	{
-		title: "Project Three",
-		description: "Placeholder description. Replace with a short summary of this site.",
-		url: "https://example.com",
-		repo: "https://github.com/thatdevterry/project-three",
-		image: placeholderImage,
-		tags: ["JavaScript", "API"],
+		title: "Forever",
+		description:
+			"An e-commerce storefront with product browsing, search, wishlist, cart, and sign-in.",
+		url: "https://forever-frontend-gamma-wheat.vercel.app",
+		repo: "https://github.com/biesboerTerry-FS/Forever",
+		image: foreverImage,
+		tags: ["React", "JavaScript", "E-commerce"],
+		links: [
+			{
+				label: "Admin",
+				url: "https://vercel.com/terry-biesboers-projects/forever-admin/BWXD8TmKLL19UAPWHHSkeNS2NWeg",
+			},
+		],
 	},
 	{
-		title: "Project Four",
-		description: "Placeholder description. Replace with a short summary of this site.",
-		url: "https://example.com",
-		repo: "https://github.com/thatdevterry/project-four",
-		image: placeholderImage,
-		tags: ["React", "Firebase"],
+		title: "ThePokeApp",
+		description:
+			"A Pokémon-themed app for browsing and exploring Pokémon data.",
+		url: "https://thepokeapp.vercel.app",
+		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
+		image: pokeAppImage,
+		tags: ["React", "JavaScript", "API"],
 	},
 	{
 		title: "Tomato",
