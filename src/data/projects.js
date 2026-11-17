@@ -13,7 +13,7 @@ export const projects = [
 		url: "https://brisk-tuba-bxj90bu.tmp.now",
 		repo: "https://github.com/biesboerTerry-FS/lindberghUltimate",
 		image: projectOneImage,
-		tags: ["React", "CSS"],
+		tags: ["React", "CSS", "JavaScript"],
 		links: [
 			{
 				label: "Admin Login",
@@ -28,7 +28,7 @@ export const projects = [
 		url: "https://diary-2jv99sgyx-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Diary",
 		image: diaryImage,
-		tags: ["Next.js", "JavaScript", "React"],
+		tags: ["Next.js", "React", "JavaScript", "Vercel"],
 	},
 	{
 		title: "Forever",
@@ -37,7 +37,7 @@ export const projects = [
 		url: "https://forever-frontend-gamma-wheat.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Forever",
 		image: foreverImage,
-		tags: ["React", "JavaScript", "E-commerce"],
+		tags: ["React", "JavaScript", "E-commerce", "Vercel"],
 		links: [
 			{
 				label: "Admin",
@@ -52,7 +52,7 @@ export const projects = [
 		url: "https://thepokeapp.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
 		image: pokeAppImage,
-		tags: ["React", "JavaScript", "Expo"],
+		tags: ["React", "Expo", "React Native", "JavaScript"],
 	},
 	{
 		title: "Tomato",
@@ -60,7 +60,7 @@ export const projects = [
 		url: "https://tomato-dqkd.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Tomato",
 		image: tomatoImage,
-		tags: ["React", "Vercel", "Demo"],
+		tags: ["React", "JavaScript", "E-commerce", "Vercel"],
 		links: [
 			{
 				label: "Admin Dashboard",
@@ -75,7 +75,7 @@ export const projects = [
 		url: "https://frontend-q6gdqz96a-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Prescripto",
 		image: prescriptoImage,
-		tags: ["React", "Node.js", "MongoDB"],
+		tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Expo"],
 		links: [
 			{
 				label: "Admin/Doctor Portal",
@@ -90,7 +90,7 @@ export const projects = [
 		url: "https://github.com/biesboerTerry-FS/QuickStayHotels",
 		repo: "https://github.com/biesboerTerry-FS/QuickStayHotels",
 		image: placeholderImage,
-		tags: ["JavaScript", "React"],
+		tags: ["React", "JavaScript"],
 	},
 	{
 		title: "HolisticAsF",
@@ -99,6 +99,6 @@ export const projects = [
 		url: "https://github.com/biesboerTerry-FS/HolisticAsF",
 		repo: "https://github.com/biesboerTerry-FS/HolisticAsF",
 		image: placeholderImage,
-		tags: ["JavaScript", "React"],
+		tags: ["React", "JavaScript"],
 	},
 ];
