@@ -72,14 +72,14 @@ export const projects = [
 		title: "Prescripto",
 		description:
 			"A doctor appointment platform with a patient-facing site, admin/doctor panel, Express/MongoDB API, and Expo mobile app.",
-		url: "http://localhost:5190",
+		url: "https://frontend-q6gdqz96a-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Prescripto",
 		image: prescriptoImage,
 		tags: ["React", "Node.js", "MongoDB"],
 		links: [
 			{
 				label: "Admin/Doctor Portal",
-				url: "http://localhost:5191",
+				url: "https://admin-fneq9067c-terry-biesboers-projects.vercel.app",
 			},
 		],
 	},
