@@ -1,6 +1,19 @@
 import React, { useEffect } from "react";
 
-const skills = ["JavaScript", "React", "Node.js", "HTML & CSS", "SQL", "Git"];
+const skills = [
+	"JavaScript",
+	"React",
+	"Next.js",
+	"Node.js",
+	"Express",
+	"MongoDB",
+	"HTML & CSS",
+	"SCSS",
+	"Tailwind CSS",
+	"Expo",
+	"Vercel",
+	"Git",
+];
 
 const About = () => {
 	useEffect(() => {
@@ -18,7 +31,7 @@ const About = () => {
 
 			<div className="pageBody">
 				<p>
-					Placeholder intro. I'm Terry, a Full-Stack Developer from San
+					I'm Terry, a Full-Stack Developer from San
 					Diego, CA. Replace this with your story: how you got into
 					development, what you enjoy building, and what you're looking for.
 				</p>

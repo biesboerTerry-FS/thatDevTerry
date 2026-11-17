@@ -18,8 +18,8 @@ const Contact = () => {
 			<div className="pageBody">
 				<p>
 					Email:{" "}
-					<a className="accentLink" href="mailto:hello@example.com">
-						hello@example.com
+					<a className="accentLink" href="mailto:terry@thatdudeterry.com">
+						terry@thatdudeterry.com
 					</a>
 				</p>
 				<p>
