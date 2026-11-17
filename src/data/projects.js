@@ -23,9 +23,9 @@ export const projects = [
 		],
 	},
 	{
-		title: "Diary",
+		title: "Diary/Developer Page",
 		description:
-			"A personal diary and journaling site built with Next.js, featuring dated entries, archive browsing, and dedicated About, Projects, and Now sections.",
+			"A personal diary and developer page built with Next.js, featuring dated entries, archive browsing, and dedicated About, Projects, and Now sections.",
 		url: "https://diary-2jv99sgyx-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Diary",
 		image: diaryImage,
