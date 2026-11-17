@@ -620,11 +620,13 @@ img {
 	text-align: left;
 	font: inherit;
 	cursor: pointer;
-	transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out;
 
 	&:hover {
 		border-color: $pink;
 		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(255, 79, 163, 0.25);
 
 		h2 {
 			color: $pink;
