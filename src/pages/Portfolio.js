@@ -3,9 +3,11 @@ import { projects } from "../data/projects";
 
 const Portfolio = () => {
 	const [selectedProject, setSelectedProject] = useState(null);
+	const [fullSiteProject, setFullSiteProject] = useState(null);
 	const triggerRef = useRef(null);
 	const modalRef = useRef(null);
 	const closeButtonRef = useRef(null);
+	const fullSiteCloseRef = useRef(null);
 
 	useEffect(() => {
 		document.title = "Portfolio | Terry Biesboer";
@@ -45,6 +47,25 @@ const Portfolio = () => {
 			triggerRef.current?.focus();
 		};
 	}, [selectedProject]);
+
+	useEffect(() => {
+		if (!fullSiteProject) return;
+		const previousOverflow = document.body.style.overflow;
+		document.body.style.overflow = "hidden";
+		fullSiteCloseRef.current?.focus();
+
+		const onKeyDown = (event) => {
+			if (event.key === "Escape") {
+				setFullSiteProject(null);
+			}
+		};
+
+		window.addEventListener("keydown", onKeyDown);
+		return () => {
+			window.removeEventListener("keydown", onKeyDown);
+			document.body.style.overflow = previousOverflow;
+		};
+	}, [fullSiteProject]);
 
 	return (
 		<div className="page">
@@ -103,11 +124,20 @@ const Portfolio = () => {
 						>
 							×
 						</button>
-						<img
-							className="modalImage"
-							src={selectedProject.image}
-							alt={selectedProject.title}
-						/>
+						<div className="modalImageWrapper">
+							<img
+								className="modalImage"
+								src={selectedProject.image}
+								alt={selectedProject.title}
+							/>
+							<button
+								type="button"
+								className="viewFullSiteButton"
+								onClick={() => setFullSiteProject(selectedProject)}
+							>
+								View Full Site
+							</button>
+						</div>
 						<div className="modalBody">
 							<h2>{selectedProject.title}</h2>
 							<p>{selectedProject.description}</p>
@@ -153,6 +183,36 @@ const Portfolio = () => {
 								))}
 							</div>
 						</div>
+					</div>
+				</div>
+			)}
+
+			{fullSiteProject && (
+				<div
+					className="fullSiteOverlay"
+					onClick={() => setFullSiteProject(null)}
+				>
+					<div
+						className="fullSiteModal"
+						role="dialog"
+						aria-modal="true"
+						aria-label={`${fullSiteProject.title} full site preview`}
+						onClick={(event) => event.stopPropagation()}
+					>
+						<button
+							ref={fullSiteCloseRef}
+							type="button"
+							className="modalClose"
+							onClick={() => setFullSiteProject(null)}
+							aria-label="Close"
+						>
+							×
+						</button>
+						<img
+							className="fullSiteImage"
+							src={fullSiteProject.image}
+							alt={fullSiteProject.title}
+						/>
 					</div>
 				</div>
 			)}

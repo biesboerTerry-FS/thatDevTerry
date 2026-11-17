@@ -744,13 +744,45 @@ img {
 	cursor: pointer;
 }
 
+.modalImageWrapper {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	overflow: hidden;
+	border: 2px solid $pink;
+}
+
 .modalImage {
 	width: 100%;
-	max-width: 100%;
-	height: auto;
-	object-fit: contain;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
 	display: block;
-	border: 2px solid $pink;
+}
+
+.viewFullSiteButton {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.45);
+	color: $offWhite;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+
+.modalImageWrapper:hover .viewFullSiteButton,
+.modalImageWrapper:focus-within .viewFullSiteButton {
+	opacity: 1;
 }
 
 .modalBody {
@@ -788,6 +820,32 @@ img {
 
 .modalLinksLeft {
 	flex: 1;
+}
+
+.fullSiteOverlay {
+	position: fixed;
+	inset: 0;
+	z-index: 1300;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow-y: auto;
+}
+
+.fullSiteModal {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	background-color: $menuBg;
+	border: 1px solid $pink;
+}
+
+.fullSiteImage {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .modalLink {
