@@ -9,14 +9,15 @@ import prescriptoImage from "../images/prescripto.jpg";
 export const projects = [
 	{
 		title: "Lindbergh Ultimate",
-		description: "A site for Lindbergh Ultimate with a public page and admin login.",
+		description:
+			"A public-facing site for Lindbergh Ultimate with a dedicated admin login for managing team content.",
 		url: "https://brisk-tuba-bxj90bu.tmp.now",
 		repo: "https://github.com/biesboerTerry-FS/lindberghUltimate",
 		image: projectOneImage,
 		tags: ["React", "CSS", "JavaScript"],
-		links: [
+		views: [
 			{
-				label: "Admin Login",
+				label: "Admin",
 				url: "https://brisk-tuba-bxj90bu.tmp.now/admin/login",
 			},
 		],
@@ -24,7 +25,7 @@ export const projects = [
 	{
 		title: "Diary",
 		description:
-			"A personal diary site built with Next.js, featuring dated entries and sections like Archive, About, Projects, and Now.",
+			"A personal diary and journaling site built with Next.js, featuring dated entries, archive browsing, and dedicated About, Projects, and Now sections.",
 		url: "https://diary-2jv99sgyx-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Diary",
 		image: diaryImage,
@@ -33,12 +34,12 @@ export const projects = [
 	{
 		title: "Forever",
 		description:
-			"An e-commerce storefront with product browsing, search, wishlist, cart, and sign-in.",
+			"A full e-commerce storefront with product browsing, search, wishlist, cart, checkout flow, and a separate admin panel for managing products and orders.",
 		url: "https://forever-frontend-gamma-wheat.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Forever",
 		image: foreverImage,
 		tags: ["React", "JavaScript", "E-commerce", "Vercel"],
-		links: [
+		views: [
 			{
 				label: "Admin",
 				url: "https://vercel.com/terry-biesboers-projects/forever-admin/BWXD8TmKLL19UAPWHHSkeNS2NWeg",
@@ -48,7 +49,7 @@ export const projects = [
 	{
 		title: "ThePokeApp",
 		description:
-			"A Pokédex-style app for organizing your collection, tracking levels, managing sprites, and playing a Card Match game.",
+			"A Pokédex-style app for organizing your collection, tracking levels, managing sprites, and playing an interactive Card Match game.",
 		url: "https://thepokeapp.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
 		image: pokeAppImage,
@@ -56,14 +57,15 @@ export const projects = [
 	},
 	{
 		title: "Tomato",
-		description: "A food ordering site with menu browsing, cart, and app download sections.",
+		description:
+			"A food ordering platform with menu browsing, cart management, app download prompts, and an admin dashboard for restaurant operations.",
 		url: "https://tomato-dqkd.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Tomato",
 		image: tomatoImage,
 		tags: ["React", "JavaScript", "E-commerce", "Vercel"],
-		links: [
+		views: [
 			{
-				label: "Admin Dashboard",
+				label: "Admin",
 				url: "https://tomato-admin-ten.vercel.app/dashboard",
 			},
 		],
@@ -71,14 +73,18 @@ export const projects = [
 	{
 		title: "Prescripto",
 		description:
-			"A doctor appointment platform with a patient-facing site, admin/doctor panel, Express/MongoDB API, and Expo mobile app.",
+			"A full-stack doctor appointment platform with a patient-facing frontend, admin/doctor panel, Express/MongoDB API, and an Expo mobile app for patients.",
 		url: "https://frontend-q6gdqz96a-terry-biesboers-projects.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/Prescripto",
 		image: prescriptoImage,
 		tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Expo"],
-		links: [
+		views: [
 			{
-				label: "Admin/Doctor Portal",
+				label: "Admin",
+				url: "https://admin-fneq9067c-terry-biesboers-projects.vercel.app",
+			},
+			{
+				label: "Doctor",
 				url: "https://admin-fneq9067c-terry-biesboers-projects.vercel.app",
 			},
 		],
@@ -86,7 +92,7 @@ export const projects = [
 	{
 		title: "QuickStayHotels",
 		description:
-			"A hotel booking and reservation project. Replace with a short summary once the live demo is ready.",
+			"A hotel booking and reservation project. Details and live views will be added as the project progresses.",
 		url: "https://github.com/biesboerTerry-FS/QuickStayHotels",
 		repo: "https://github.com/biesboerTerry-FS/QuickStayHotels",
 		image: placeholderImage,
@@ -95,7 +101,7 @@ export const projects = [
 	{
 		title: "HolisticAsF",
 		description:
-			"A holistic wellness project. Replace with a short summary once the live demo is ready.",
+			"A holistic wellness project. Details and live views will be added as the project progresses.",
 		url: "https://github.com/biesboerTerry-FS/HolisticAsF",
 		repo: "https://github.com/biesboerTerry-FS/HolisticAsF",
 		image: placeholderImage,

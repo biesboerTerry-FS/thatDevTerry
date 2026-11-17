@@ -31,13 +31,16 @@ const About = () => {
 
 			<div className="pageBody">
 				<p>
-					I'm Terry, a Full-Stack Developer from San
-					Diego, CA. Replace this with your story: how you got into
-					development, what you enjoy building, and what you're looking for.
+					I'm Terry, a Full-Stack Developer from San Diego, CA, currently
+					pursuing a Bachelor of Science in Computer Science for Web Design and
+					Development at Full Sail University, with projected graduation in
+					2026. I love building clean, responsive web apps and exploring the
+					full stack from frontend interfaces to backend APIs and databases.
 				</p>
 				<p>
-					Placeholder paragraph about your approach to design, code quality,
-					and working with clients or teams.
+					I'm actively seeking opportunities in web development where I can
+					contribute to meaningful projects, continue growing my skills, and
+					collaborate with teams that value quality code and thoughtful design.
 				</p>
 
 				<h2 className="sectionTitle">

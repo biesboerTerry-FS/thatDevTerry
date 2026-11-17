@@ -53,7 +53,11 @@ const Portfolio = () => {
 				<h1>
 					<span className="accent">portfolio</span>
 				</h1>
-				<p>A selection of sites and apps I've built. Click a card for details.</p>
+				<p>
+					A collection of sites and apps I've built across the stack — from
+					patient-facing frontends and admin panels to backends, APIs, and
+					mobile experiences. Click a card to explore each project.
+				</p>
 			</header>
 
 			<div className="projectGrid">
@@ -108,36 +112,40 @@ const Portfolio = () => {
 							<h2>{selectedProject.title}</h2>
 							<p>{selectedProject.description}</p>
 							<div className="modalLinks">
-								<a
-									href={selectedProject.url}
-									className="modalLink primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Visit Site
-								</a>
-								{selectedProject.repo && (
+								<div className="modalLinksLeft">
 									<a
-										href={selectedProject.repo}
-										className="modalLink"
+										href={selectedProject.url}
+										className="modalLink primary"
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										GitHub Repo
+										Visit Site
 									</a>
-								)}
-								{selectedProject.links &&
-									selectedProject.links.map((link) => (
+									{selectedProject.views &&
+										selectedProject.views.map((view) => (
+											<a
+												key={`${view.label}-${view.url}`}
+												href={view.url}
+												className="modalLink"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												{view.label}
+											</a>
+										))}
+								</div>
+								{selectedProject.repo && (
+									<div className="modalLinksRight">
 										<a
-											key={link.url}
-											href={link.url}
+											href={selectedProject.repo}
 											className="modalLink"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{link.label}
+											GitHub Repo
 										</a>
-									))}
+									</div>
+								)}
 							</div>
 							<div className="projectTags">
 								{selectedProject.tags.map((tag) => (
