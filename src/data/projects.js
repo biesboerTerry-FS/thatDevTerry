@@ -4,7 +4,7 @@ import projectOneImage from "../images/project-one.jpg";
 import diaryImage from "../images/diary.jpg";
 import foreverImage from "../images/forever.jpg";
 import pokeAppImage from "../images/thepokeapp.jpg";
-import portfolioThumbnail from "../images/portfolio-thumbnail.jpg";
+import prescriptoImage from "../images/prescripto.jpg";
 
 export const projects = [
 	{
@@ -69,28 +69,30 @@ export const projects = [
 		],
 	},
 	{
-		title: "Portfolio Demo",
+		title: "Prescripto",
 		description:
-			"My personal portfolio site showcasing projects, skills, and contact information.",
-		url: "https://github.com/biesboerTerry-FS/thatDevTerry",
-		repo: "https://github.com/biesboerTerry-FS/thatDevTerry",
-		image: portfolioThumbnail,
-		tags: ["React", "SCSS", "Portfolio"],
+			"A doctor appointment platform with a patient-facing site, admin panel, Express/MongoDB API, and Expo mobile app.",
+		url: "https://prescripto-frontend.vercel.app",
+		repo: "https://github.com/biesboerTerry-FS/Prescripto",
+		image: prescriptoImage,
+		tags: ["React", "Node.js", "MongoDB"],
 	},
 	{
-		title: "Demo Site Seven",
-		description: "Placeholder demo site. Replace with a short summary of this site.",
-		url: "https://example.com",
-		repo: "https://github.com/thatdevterry/demo-site-seven",
+		title: "QuickStayHotels",
+		description:
+			"A hotel booking and reservation project. Replace with a short summary once the live demo is ready.",
+		url: "https://github.com/biesboerTerry-FS/QuickStayHotels",
+		repo: "https://github.com/biesboerTerry-FS/QuickStayHotels",
 		image: placeholderImage,
-		tags: ["React", "REST API"],
+		tags: ["JavaScript", "React"],
 	},
 	{
-		title: "Demo Site Eight",
-		description: "Placeholder demo site. Replace with a short summary of this site.",
-		url: "https://example.com",
-		repo: "https://github.com/thatdevterry/demo-site-eight",
+		title: "HolisticAsF",
+		description:
+			"A holistic wellness project. Replace with a short summary once the live demo is ready.",
+		url: "https://github.com/biesboerTerry-FS/HolisticAsF",
+		repo: "https://github.com/biesboerTerry-FS/HolisticAsF",
 		image: placeholderImage,
-		tags: ["JavaScript", "CSS"],
+		tags: ["JavaScript", "React"],
 	},
 ];
