@@ -48,11 +48,11 @@ export const projects = [
 	{
 		title: "ThePokeApp",
 		description:
-			"A Pokémon-themed app for browsing and exploring Pokémon data.",
+			"A Pokédex-style app for organizing your collection, tracking levels, managing sprites, and playing a Card Match game.",
 		url: "https://thepokeapp.vercel.app",
 		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
 		image: pokeAppImage,
-		tags: ["React", "JavaScript", "API"],
+		tags: ["React", "JavaScript", "Expo"],
 	},
 	{
 		title: "Tomato",
@@ -69,7 +69,7 @@ export const projects = [
 		],
 	},
 	{
-		title: "thatDevTerry Portfolio",
+		title: "Portfolio Demo",
 		description:
 			"My personal portfolio site showcasing projects, skills, and contact information.",
 		url: "https://github.com/biesboerTerry-FS/thatDevTerry",
