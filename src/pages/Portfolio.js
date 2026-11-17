@@ -3,11 +3,10 @@ import { projects } from "../data/projects";
 
 const Portfolio = () => {
 	const [selectedProject, setSelectedProject] = useState(null);
-	const [fullSiteProject, setFullSiteProject] = useState(null);
 	const triggerRef = useRef(null);
 	const modalRef = useRef(null);
 	const closeButtonRef = useRef(null);
-	const fullSiteCloseRef = useRef(null);
+	const modalImageWrapperRef = useRef(null);
 
 	useEffect(() => {
 		document.title = "Portfolio | Terry Biesboer";
@@ -48,24 +47,11 @@ const Portfolio = () => {
 		};
 	}, [selectedProject]);
 
-	useEffect(() => {
-		if (!fullSiteProject) return;
-		const previousOverflow = document.body.style.overflow;
-		document.body.style.overflow = "hidden";
-		fullSiteCloseRef.current?.focus();
-
-		const onKeyDown = (event) => {
-			if (event.key === "Escape") {
-				setFullSiteProject(null);
-			}
-		};
-
-		window.addEventListener("keydown", onKeyDown);
-		return () => {
-			window.removeEventListener("keydown", onKeyDown);
-			document.body.style.overflow = previousOverflow;
-		};
-	}, [fullSiteProject]);
+	const scrollImageFrame = () => {
+		const wrapper = modalImageWrapperRef.current;
+		if (!wrapper) return;
+		wrapper.scrollTo({ top: wrapper.scrollHeight, behavior: "smooth" });
+	};
 
 	return (
 		<div className="page">
@@ -124,7 +110,10 @@ const Portfolio = () => {
 						>
 							×
 						</button>
-						<div className="modalImageWrapper">
+						<div
+							className="modalImageWrapper"
+							ref={modalImageWrapperRef}
+						>
 							<img
 								className="modalImage"
 								src={selectedProject.image}
@@ -132,10 +121,24 @@ const Portfolio = () => {
 							/>
 							<button
 								type="button"
-								className="viewFullSiteButton"
-								onClick={() => setFullSiteProject(selectedProject)}
+								className="scrollSiteOverlay"
+								onClick={scrollImageFrame}
+								aria-label="Scroll to view full site screenshot"
 							>
-								View Full Site
+								<span>Scroll to view site</span>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									strokeWidth="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									aria-hidden="true"
+								>
+									<polyline points="6 9 12 15 18 9" />
+								</svg>
 							</button>
 						</div>
 						<div className="modalBody">
@@ -183,36 +186,6 @@ const Portfolio = () => {
 								))}
 							</div>
 						</div>
-					</div>
-				</div>
-			)}
-
-			{fullSiteProject && (
-				<div
-					className="fullSiteOverlay"
-					onClick={() => setFullSiteProject(null)}
-				>
-					<div
-						className="fullSiteModal"
-						role="dialog"
-						aria-modal="true"
-						aria-label={`${fullSiteProject.title} full site preview`}
-						onClick={(event) => event.stopPropagation()}
-					>
-						<button
-							ref={fullSiteCloseRef}
-							type="button"
-							className="modalClose"
-							onClick={() => setFullSiteProject(null)}
-							aria-label="Close"
-						>
-							×
-						</button>
-						<img
-							className="fullSiteImage"
-							src={fullSiteProject.image}
-							alt={fullSiteProject.title}
-						/>
 					</div>
 				</div>
 			)}
