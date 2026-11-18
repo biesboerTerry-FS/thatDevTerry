@@ -1287,3 +1287,26 @@ img {
 	font-size: 14px;
 	line-height: 1.3;
 }
+
+/* Mobile header bar: keeps scrolling content from blending into the logo/menu */
+@media (max-width: 768px) {
+	.navWrapper {
+		height: 78px;
+		padding: 22px 20px 0;
+		background-color: rgba(41, 37, 28, 0.88);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border-bottom: 1px solid rgba(255, 79, 163, 0.35);
+	}
+
+	.siteHeader {
+		position: static;
+		right: auto;
+		padding: 0;
+	}
+
+	.menu {
+		height: 78px;
+		padding-top: 6px;
+	}
+}
