@@ -9,12 +9,6 @@ import {
 } from "react-icons/fa";
 import avatar from "../images/terry.jpeg";
 
-const formattedDate = new Date().toLocaleDateString("en-US", {
-	year: "numeric",
-	month: "long",
-	day: "numeric",
-});
-
 const Homepage = () => {
 	useEffect(() => {
 		document.title = "Terry Biesboer | Portfolio";
@@ -33,7 +27,7 @@ const Homepage = () => {
 				</div>
 				<div className="bio">
 					<h1>
-						<span className="accent">portfolio of Terry Biesboer</span> — {formattedDate}
+						<span className="accent">Terry Biesboer</span>
 					</h1>
 					<p>
 						Hi, I&apos;m <strong>Terry Biesboer</strong> — a passionate full-stack
