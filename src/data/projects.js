@@ -227,5 +227,5 @@ export const projects = [
 export const siteLinks = {
 	email: "terry@thatdudeterry.com",
 	github: "https://github.com/biesboerTerry-FS",
-	linkedin: "https://www.linkedin.com/in/terrybiesboer",
+	// linkedin: "https://www.linkedin.com/in/terrybiesboer",
 };

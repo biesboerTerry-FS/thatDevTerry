@@ -67,7 +67,7 @@ const Contact = () => {
 								{siteLinks.github}
 							</a>
 						</li>
-						<li>
+						{/* <li>
 							<strong>LinkedIn:</strong>{" "}
 							<a
 								className="accentLink"
@@ -77,7 +77,7 @@ const Contact = () => {
 							>
 								linkedin.com/in/terrybiesboer
 							</a>
-						</li>
+						</li> */}
 					</ul>
 					<p className="cardNote">
 						For the fastest response, email is best. Include a short subject
