@@ -22,7 +22,7 @@ const Navigation = () => {
 				{!isToggled && (
 					<div className="siteHeader">
 						<NavLink to="/" className="siteBrand" onClick={() => setIsToggled(false)}>
-							<span className="siteBrandMark" aria-hidden="true">TB</span>
+							<img className="siteBrandMark" src={logo} alt="" aria-hidden="true" />
 							<span className="siteBrandName">Terry Biesboer</span>
 						</NavLink>
 					</div>

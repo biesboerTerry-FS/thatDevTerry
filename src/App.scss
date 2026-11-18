@@ -1255,17 +1255,13 @@ img {
 }
 
 .siteBrandMark {
-	display: grid;
-	place-items: center;
 	width: 34px;
 	height: 34px;
 	flex: 0 0 34px;
+	object-fit: cover;
+	background-color: $menuBg;
 	border: 2px solid $pink;
 	border-radius: 100%;
-	color: $pink;
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 1px;
 }
 
 .siteBrandName {
