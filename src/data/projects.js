@@ -1,110 +1,227 @@
 import placeholderImage from "../images/placeholder.svg";
 import tomatoImage from "../images/tomato.jpg";
 import projectOneImage from "../images/project-one.jpg";
-import diaryImage from "../images/diary.jpg";
+import portfolioImage from "../images/portfolio.jpg";
 import foreverImage from "../images/forever.jpg";
 import pokeAppImage from "../images/thepokeapp.jpg";
 import prescriptoImage from "../images/prescripto.jpg";
 
+// Selected work and case studies.
 export const projects = [
 	{
 		title: "Lindbergh Ultimate",
-		description:
-			"A public-facing site for Lindbergh Ultimate with a dedicated admin login for managing team content.",
-		url: "https://brisk-tuba-bxj90bu.tmp.now",
-		repo: "https://github.com/biesboerTerry-FS/lindberghUltimate",
-		image: projectOneImage,
-		tags: ["React", "CSS", "JavaScript"],
-		views: [
-			{
-				label: "Admin",
-				url: "https://brisk-tuba-bxj90bu.tmp.now/admin/login",
-			},
+		role: "Full-Stack Development",
+		timeframe: "2024",
+		stack: ["React", "CSS", "JavaScript"],
+		summary:
+			"A public-facing site for Lindbergh Ultimate with team info, program history, and a secured admin panel for content management.",
+		problem:
+			"The program needed a central hub to share information publicly while giving administrators a secure place to manage content.",
+		contributions: [
+			"Built a responsive public site with team sections, program history, and highlight galleries.",
+			"Implemented an admin authentication flow to protect management routes.",
+			"Deployed the application for live access and ongoing updates.",
 		],
+		outcomes: [
+			"A live site visitors can browse and an admin experience for content management.",
+		],
+		repo: "https://github.com/biesboerTerry-FS/LindberghUltimateFrisbee",
+		image: projectOneImage,
+		views: [
+			{ label: "Front", url: "https://lindberghultimatefrisbee-terry-biesboers-projects.vercel.app" },
+			{ label: "Admin", url: "https://lindberghultimatefrisbee-terry-biesboers-projects.vercel.app/admin/login" },
+			{ label: "Mobile", url: "https://lindbergh-ultimate-mobile-n6xhd7h6x-terry-biesboers-projects.vercel.app" },
+		],
+		missing: [],
 	},
 	{
-		title: "Diary/Developer Page",
-		description:
-			"A personal diary and developer page built with Next.js, featuring dated entries, archive browsing, and dedicated About, Projects, and Now sections.",
-		url: "https://diary-2jv99sgyx-terry-biesboers-projects.vercel.app",
-		repo: "https://github.com/biesboerTerry-FS/Diary",
-		image: diaryImage,
-		tags: ["Next.js", "React", "JavaScript", "Vercel"],
+		title: "Terry Biesboer Portfolio",
+		role: "Design & Frontend Development",
+		timeframe: "2026",
+		stack: ["React", "React Router", "Sass", "JavaScript", "Vercel"],
+		summary:
+			"A personal portfolio site that presents selected work, background, and contact details in a focused single-page experience.",
+		problem:
+			"A clear, polished portfolio was needed to showcase projects, education, and availability in one easy-to-navigate place.",
+		contributions: [
+			"Built a responsive React single-page app with routing for portfolio sections.",
+			"Styled the interface with Sass and component-based layouts for consistent visual design.",
+			"Deployed the site to Vercel with a dedicated /portfolio route.",
+		],
+		outcomes: [
+			"A live portfolio that introduces Terry Biesboer and links to selected projects.",
+		],
+		repo: "https://github.com/biesboerTerry-FS/thatDevTerry.git",
+		image: portfolioImage,
+		views: [
+			{ label: "Front", url: "https://portfolio-three-pink-69.vercel.app/portfolio" },
+		],
+		missing: [],
 	},
 	{
 		title: "Forever",
-		description:
-			"A full e-commerce storefront with product browsing, search, wishlist, cart, checkout flow, and a separate admin panel for managing products and orders.",
-		url: "https://forever-frontend-gamma-wheat.vercel.app",
+		role: "Full-Stack Development",
+		timeframe: "2024",
+		stack: ["React", "JavaScript", "E-commerce", "Vercel"],
+		summary:
+			"An e-commerce storefront with product browsing, search, wishlist, cart, sign-in, backend API, admin dashboard, and mobile app.",
+		problem:
+			"A complete e-commerce experience requires product discovery, user state, and admin control working together.",
+		contributions: [
+			"Built a storefront with product browsing, search, wishlist, and cart.",
+			"Implemented user sign-in and session-aware features.",
+			"Created an admin dashboard for product and order management.",
+			"Developed a companion mobile experience and supporting backend API.",
+		],
+		outcomes: [
+			"A functioning e-commerce frontend, admin panel, mobile app, and backend deployed to Vercel.",
+		],
 		repo: "https://github.com/biesboerTerry-FS/Forever",
 		image: foreverImage,
-		tags: ["React", "JavaScript", "E-commerce", "Vercel"],
 		views: [
-			{
-				label: "Admin",
-				url: "https://vercel.com/terry-biesboers-projects/forever-admin/BWXD8TmKLL19UAPWHHSkeNS2NWeg",
-			},
+			{ label: "Front", url: "https://forever-frontend-gamma-wheat.vercel.app" },
+			{ label: "Back", url: "https://forever-backend-neon-eta.vercel.app" },
+			{ label: "Admin", url: "https://forever-admin-mocha-omega.vercel.app" },
+			{ label: "Mobile", url: "https://forever-mobile.vercel.app" },
 		],
+		missing: [],
 	},
 	{
 		title: "ThePokeApp",
-		description:
-			"A Pokédex-style app for organizing your collection, tracking levels, managing sprites, and playing an interactive Card Match game.",
-		url: "https://thepokeapp.vercel.app",
+		role: "Mobile & Frontend Development",
+		timeframe: "2024",
+		stack: ["React", "Expo", "React Native", "JavaScript"],
+		summary:
+			"A Pokédex-style app for organizing your collection, tracking levels, managing sprites, and playing a Card Match game.",
+		problem:
+			"Pokémon fans need a playful, organized way to track collections and levels across devices.",
+		contributions: [
+			"Built collection and level-tracking features with persistent state.",
+			"Implemented sprite management and a Card Match mini-game.",
+			"Used Expo to target mobile platforms with a shared codebase.",
+		],
+		outcomes: [
+			"A cross-platform app experience for collectors and casual players.",
+		],
 		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
 		image: pokeAppImage,
-		tags: ["React", "Expo", "React Native", "JavaScript"],
+		views: [
+			{ label: "Mobile", url: "https://thepokeapp.vercel.app" },
+		],
+		missing: [],
 	},
 	{
 		title: "Tomato",
-		description:
-			"A food ordering platform with menu browsing, cart management, app download prompts, and an admin dashboard for restaurant operations.",
-		url: "https://tomato-dqkd.vercel.app",
+		role: "Full-Stack Development",
+		timeframe: "2024",
+		stack: ["React", "JavaScript", "E-commerce", "Vercel"],
+		summary:
+			"A food ordering site with menu browsing, cart, app download sections, backend API, and an admin panel for menu and order management.",
+		problem:
+			"A food-ordering brand needs a fast menu experience plus a way to manage orders behind the scenes.",
+		contributions: [
+			"Built a customer-facing menu, cart, and checkout flow.",
+			"Added app download sections and promotional content areas.",
+			"Developed an admin dashboard for menu and order management.",
+			"Created a supporting backend API for data and auth.",
+		],
+		outcomes: [
+			"A live ordering site, admin dashboard, and backend API for ongoing operations.",
+		],
 		repo: "https://github.com/biesboerTerry-FS/Tomato",
 		image: tomatoImage,
-		tags: ["React", "JavaScript", "E-commerce", "Vercel"],
 		views: [
-			{
-				label: "Admin",
-				url: "https://tomato-admin-ten.vercel.app/dashboard",
-			},
+			{ label: "Front", url: "https://tomato-dqkd.vercel.app" },
+			{ label: "Back", url: "https://tomato-green-nine.vercel.app" },
+			{ label: "Admin", url: "https://tomato-admin-ten.vercel.app/dashboard" },
+			{ label: "Mobile", url: "https://tomato-mobile-pm96a8bev-terry-biesboers-projects.vercel.app" },
 		],
+		missing: [],
 	},
 	{
 		title: "Prescripto",
-		description:
-			"A full-stack doctor appointment platform with a patient-facing frontend, admin/doctor panel, Express/MongoDB API, and an Expo mobile app for patients.",
-		url: "https://frontend-q6gdqz96a-terry-biesboers-projects.vercel.app",
+		role: "Full-Stack Development",
+		timeframe: "2024",
+		stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Expo"],
+		summary:
+			"A doctor appointment platform with a patient-facing site, admin/doctor panel, Express/MongoDB API, and Expo mobile app.",
+		problem:
+			"Scheduling medical appointments involves patients, doctors, and admins—each needing a tailored interface.",
+		contributions: [
+			"Built a patient-facing React frontend for browsing doctors and booking appointments.",
+			"Developed an Express/MongoDB API to handle appointments, users, and roles.",
+			"Created an admin/doctor panel and an Expo mobile app for cross-platform access.",
+		],
+		outcomes: [
+			"A multi-role platform spanning web, admin, and mobile surfaces.",
+		],
 		repo: "https://github.com/biesboerTerry-FS/Prescripto",
 		image: prescriptoImage,
-		tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Expo"],
 		views: [
-			{
-				label: "Admin",
-				url: "https://admin-fneq9067c-terry-biesboers-projects.vercel.app",
-			},
-			{
-				label: "Doctor",
-				url: "https://admin-fneq9067c-terry-biesboers-projects.vercel.app",
-			},
+			{ label: "Front", url: "https://frontend-hg1m8ls5a-terry-biesboers-projects.vercel.app" },
+			{ label: "Back", url: "https://backend-6f0maqq3u-terry-biesboers-projects.vercel.app" },
+			{ label: "Admin", url: "https://admin-7yqgsp6gf-terry-biesboers-projects.vercel.app" },
+			{ label: "Doctor", url: "https://admin-7yqgsp6gf-terry-biesboers-projects.vercel.app" },
+			{ label: "Mobile", url: "https://prescripto-mobile-akovorl10-terry-biesboers-projects.vercel.app" },
 		],
+		missing: [],
 	},
 	{
 		title: "QuickStayHotels",
-		description:
-			"A hotel booking and reservation project. Details and live views will be added as the project progresses.",
-		url: "https://github.com/biesboerTerry-FS/QuickStayHotels",
+		role: "Full-Stack Development",
+		timeframe: "In Progress",
+		stack: ["React", "JavaScript"],
+		summary:
+			"A hotel booking and reservation project currently in development.",
+		problem:
+			"The live demo is still being prepared, so the project is tracked via its repository.",
+		contributions: [
+			"Scaffolding the booking and reservation workflow.",
+			"Building the frontend interface for searching and selecting stays.",
+		],
+		outcomes: [
+			"Repository established; live demo coming soon.",
+		],
 		repo: "https://github.com/biesboerTerry-FS/QuickStayHotels",
 		image: placeholderImage,
-		tags: ["React", "JavaScript"],
+		views: [
+			{ label: "Front", url: "https://quickstayhotels-client-f6mf76dwz-terry-biesboers-projects.vercel.app" },
+			{ label: "Back", url: "https://quickstayhotels-server-qsz6tbj1a-terry-biesboers-projects.vercel.app" },
+			{ label: "Admin", url: "https://quickstayhotels-admin-otrlup00f-terry-biesboers-projects.vercel.app" },
+			{ label: "Mobile", url: "https://quickstayhotels-mobile-h8fr2ntqg-terry-biesboers-projects.vercel.app" },
+		],
+		missing: [],
 	},
 	{
 		title: "HolisticAsF",
-		description:
-			"A holistic wellness project. Details and live views will be added as the project progresses.",
-		url: "https://github.com/biesboerTerry-FS/HolisticAsF",
+		role: "Full-Stack Development",
+		timeframe: "In Progress",
+		stack: ["React", "JavaScript"],
+		summary:
+			"A holistic wellness project currently in development.",
+		problem:
+			"The live demo is still being prepared, so the project is tracked via its repository.",
+		contributions: [
+			"Planning the wellness-focused feature set and user experience.",
+			"Building the frontend foundation for the project.",
+		],
+		outcomes: [
+			"Repository established; live demo coming soon.",
+		],
 		repo: "https://github.com/biesboerTerry-FS/HolisticAsF",
 		image: placeholderImage,
-		tags: ["React", "JavaScript"],
+		views: [
+			{ label: "Front", url: "https://holisticasf-client-npki4n8q4-terry-biesboers-projects.vercel.app" },
+			{ label: "Back", url: "https://holisticasf-server-gggdx8mz9-terry-biesboers-projects.vercel.app" },
+			{ label: "Admin", url: "https://holisticasf-admin-bsm3l67qg-terry-biesboers-projects.vercel.app" },
+			{ label: "Mobile", url: "https://holisticasf-mobile-fafg4dixp-terry-biesboers-projects.vercel.app" },
+		],
+		missing: [],
 	},
 ];
+
+export const siteLinks = {
+	email: "terry@thatdudeterry.com",
+	github: "https://github.com/biesboerTerry-FS",
+	linkedin: "https://www.linkedin.com/in/terrybiesboer",
+};

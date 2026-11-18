@@ -6,7 +6,7 @@ import logo from "../images/logo.png";
 const pageLinks = [
 	{ to: "/", label: "home" },
 	{ to: "/about", label: "about" },
-	{ to: "/work", label: "work" },
+	{ to: "/work", label: "more" },
 	{ to: "/portfolio", label: "portfolio" },
 	{ to: "/contact", label: "contact" },
 ];

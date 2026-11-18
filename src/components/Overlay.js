@@ -48,7 +48,7 @@ const Overlay = (props) => {
 							data-number="3"
 							onClick={props.onClose}
 						>
-							work
+							more
 						</NavLink>
 					</div>
 					<div className="navLink">
@@ -128,7 +128,7 @@ const Overlay = (props) => {
 				}
 			>
 				<p className="copyright">
-					Copyright © {new Date().getFullYear()} | thatDevTerry
+					Copyright © {new Date().getFullYear()} | Terry Biesboer
 				</p>
 			</div>
 		</div>
@@ -362,7 +362,7 @@ export default Overlay;
 // 			</NavSocial>
 
 // 			<CopyWrapper isActive={toggleData}>
-// 				<p className="copyright">Copyright © 2024 | thatDevTerry</p>
+// 				<p className="copyright">Copyright © 2024 | Terry Biesboer</p>
 // 			</CopyWrapper>
 // 		</OverlayContainer>
 // 	);

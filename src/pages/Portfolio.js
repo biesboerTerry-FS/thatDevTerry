@@ -53,17 +53,28 @@ const Portfolio = () => {
 		wrapper.scrollTo({ top: wrapper.scrollHeight, behavior: "smooth" });
 	};
 
+	const hasView = (project, type) =>
+		project.views.some((view) => view.label.toLowerCase() === type)
+			? "✅"
+			: project.missing.includes(type)
+			? "🔜 planned"
+			: "—";
+
 	return (
 		<div className="page">
 			<header className="pageHeader">
 				<span className="pageNumber">04</span>
+				<p className="eyebrow">Selected work</p>
 				<h1>
 					<span className="accent">portfolio</span>
 				</h1>
 				<p>
-					A collection of sites and apps I've built across the stack — from
-					patient-facing frontends and admin panels to backends, APIs, and
-					mobile experiences. Click a card to explore each project.
+					A selection of sites and apps I&apos;ve built. Each project reflects
+					a different challenge—e-commerce, content publishing, mobile apps,
+					and multi-role platforms. I&apos;m currently completing my
+					Bachelor&apos;s in Computer Science for Web Design &amp; Development
+					at Full Sail University and actively seeking opportunities in the
+					field.
 				</p>
 			</header>
 
@@ -83,6 +94,13 @@ const Portfolio = () => {
 						</div>
 						<div className="projectInfo">
 							<h2>{project.title}</h2>
+							<p className="projectRole">
+								{project.role}{project.timeframe ? ` · ${project.timeframe}` : ""}
+							</p>
+							<p className="projectSummary">{project.summary}</p>
+							<div className="projectTags">
+								{project.stack.map((item) => <span key={item}>{item}</span>)}
+							</div>
 						</div>
 					</button>
 				))}
@@ -143,29 +161,48 @@ const Portfolio = () => {
 						</div>
 						<div className="modalBody">
 							<h2>{selectedProject.title}</h2>
-							<p>{selectedProject.description}</p>
+							<p className="modalRole">
+								{selectedProject.role}{selectedProject.timeframe ? ` · ${selectedProject.timeframe}` : ""}
+							</p>
+							<p>{selectedProject.summary}</p>
+
+							<div className="modalDetailGrid">
+								<section>
+									<h3>Challenge</h3>
+									<p>{selectedProject.problem}</p>
+								</section>
+								<section>
+									<h3>What I contributed</h3>
+									<ul className="bulletList">
+										{selectedProject.contributions.map((item) => <li key={item}>{item}</li>)}
+									</ul>
+								</section>
+								<section>
+									<h3>Outcomes</h3>
+									<ul className="bulletList">
+										{selectedProject.outcomes.map((item) => <li key={item}>{item}</li>)}
+									</ul>
+								</section>
+							</div>
+
 							<div className="modalLinks">
 								<div className="modalLinksLeft">
-									<a
-										href={selectedProject.url}
-										className="modalLink primary"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Visit Site
-									</a>
-									{selectedProject.views &&
-										selectedProject.views.map((view) => (
-											<a
-												key={`${view.label}-${view.url}`}
-												href={view.url}
-												className="modalLink"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												{view.label}
-											</a>
-										))}
+									{selectedProject.views.map((view) => (
+										<a
+											key={`${view.label}-${view.url}`}
+											href={view.url}
+											className={view.label === "Front" ? "modalLink primary" : "modalLink"}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											{view.label}
+										</a>
+									))}
+									{selectedProject.missing.map((type) => (
+										<span key={type} className="modalLink planned" title={`${selectedProject.title} - ${type}: needs to be created`}>
+											{type.charAt(0).toUpperCase() + type.slice(1)} (planned)
+										</span>
+									))}
 								</div>
 								{selectedProject.repo && (
 									<div className="modalLinksRight">
@@ -181,7 +218,7 @@ const Portfolio = () => {
 								)}
 							</div>
 							<div className="projectTags">
-								{selectedProject.tags.map((tag) => (
+								{selectedProject.stack.map((tag) => (
 									<span key={tag}>{tag}</span>
 								))}
 							</div>
@@ -189,6 +226,55 @@ const Portfolio = () => {
 					</div>
 				</div>
 			)}
+
+			<section className="infoCard inventoryCard">
+				<h2 className="cardTitle">
+					<span className="accent">deployment inventory</span>
+				</h2>
+				<p>
+					Below is the current state of deployed views for each project. Items
+					marked <span className="accent">planned</span> still need a Vercel
+					project/deployment created. The naming convention is{" "}
+					<code>sitename - type</code>, where type is frontend, backend, admin,
+					or mobile.
+				</p>
+				<div className="tableScroll">
+					<table className="dataTable">
+						<thead>
+							<tr>
+								<th>Project</th>
+								<th>Frontend</th>
+								<th>Backend</th>
+								<th>Admin</th>
+								<th>Mobile</th>
+							</tr>
+						</thead>
+						<tbody>
+							{projects.map((project) => (
+								<tr key={project.title}>
+									<td className="tableProject">{project.title}</td>
+									<td>{hasView(project, "front")}</td>
+									<td>{hasView(project, "back")}</td>
+									<td>{hasView(project, "admin")}</td>
+									<td>{hasView(project, "mobile")}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section className="infoCard closingCard">
+				<h2 className="cardTitle">
+					<span className="accent">what these projects show</span>
+				</h2>
+				<p>
+					Together, these projects highlight a progression from interface
+					implementation to content architecture, deployment awareness, and
+					cross-platform thinking. I value work that balances visual clarity,
+					technical reliability, and room for future iteration.
+				</p>
+			</section>
 		</div>
 	);
 };

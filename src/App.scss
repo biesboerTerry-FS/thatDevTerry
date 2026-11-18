@@ -933,3 +933,277 @@ img {
 		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
 }
+
+/* ---------------------------------------------------------
+   Diary content, styled with the portfolio design system
+   --------------------------------------------------------- */
+
+.bio p {
+	max-width: 620px;
+}
+
+.homeLinks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin: 0 0 28px;
+	font-size: 15px;
+
+	@media (max-width: 768px) {
+		justify-content: center;
+	}
+}
+
+.accentLink {
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		border-bottom-color: $pink;
+	}
+}
+
+.eyebrow {
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 13px !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: $pink !important;
+	margin-bottom: 12px !important;
+	max-width: none !important;
+}
+
+.lastUpdated {
+	font-size: 14px;
+	font-style: normal !important;
+	color: #999;
+	margin-top: 12px !important;
+}
+
+.aboutGrid {
+	display: grid;
+	grid-template-columns: 1.4fr 1fr;
+	gap: 50px;
+	align-items: start;
+
+	@media (max-width: 900px) {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+}
+
+.infoCard {
+	padding: 28px;
+	border: 1px solid #333;
+	border-radius: 8px;
+	background-color: rgba(246, 242, 237, 0.02);
+	line-height: 1.6;
+
+	p {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.cardTitle {
+	font-size: 22px;
+	line-height: 1.3;
+	margin-bottom: 14px;
+	color: $offWhite;
+}
+
+.cardGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 20px;
+
+	& + .cardGrid {
+		margin-top: 20px;
+	}
+}
+
+.cardGrid.twoUp {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin-bottom: 20px;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.contentSection {
+	margin-top: 55px;
+}
+
+.opportunityCard,
+.inventoryCard,
+.closingCard {
+	margin-top: 55px;
+}
+
+.inlineLinks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-top: 22px;
+	font-size: 15px;
+}
+
+.bulletList {
+	list-style: disc;
+	padding-left: 22px;
+	line-height: 1.6;
+
+	li {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.numberedList {
+	list-style: decimal;
+}
+
+.contactList {
+	list-style: none;
+	line-height: 1.8;
+
+	strong {
+		color: $offWhite;
+	}
+}
+
+.cardNote {
+	font-size: 14px;
+	color: #999;
+	margin-top: 18px !important;
+}
+
+.buttonRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.actionButton {
+	display: inline-block;
+	padding: 10px 16px;
+	border: 1px solid $pink;
+	border-radius: 4px;
+	color: $pink;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: $pink;
+		color: $menuBg;
+	}
+
+	&.primary {
+		background-color: $pink;
+		color: $menuBg;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			color: $pink;
+		}
+	}
+}
+
+.projectRole {
+	font-size: 14px;
+	color: $pink;
+	margin-bottom: 12px !important;
+}
+
+.projectSummary {
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 16px !important;
+}
+
+.modalRole {
+	font-size: 14px;
+	color: $pink;
+	margin-bottom: 14px !important;
+}
+
+.modalDetailGrid {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	gap: 24px;
+	margin: 24px 0;
+
+	section:first-child {
+		grid-column: 1 / -1;
+	}
+
+	h3 {
+		font-size: 17px;
+		color: $offWhite;
+		margin-bottom: 8px;
+	}
+
+	p,
+	li {
+		font-size: 14px;
+	}
+
+	@media (max-width: 700px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.modalLink.planned {
+	opacity: 0.7;
+	cursor: default;
+}
+
+.tableScroll {
+	overflow-x: auto;
+	margin-top: 20px;
+}
+
+.dataTable {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+	text-align: left;
+
+	th {
+		padding: 12px 16px 12px 0;
+		font-weight: 600;
+		color: $offWhite;
+		border-bottom: 1px solid #444;
+		white-space: nowrap;
+	}
+
+	td {
+		padding: 12px 16px 12px 0;
+		border-bottom: 1px solid #2c2c2c;
+		color: #bbb;
+	}
+
+	tr:last-child td {
+		border-bottom: none;
+	}
+
+	.tableProject {
+		font-weight: 600;
+		color: $offWhite;
+	}
+}

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
 	FaFacebook,
 	FaInstagram,
@@ -8,7 +9,13 @@ import {
 } from "react-icons/fa";
 import avatar from "../images/terry.jpeg";
 
-const Homepage = (props) => {
+const formattedDate = new Date().toLocaleDateString("en-US", {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+});
+
+const Homepage = () => {
 	useEffect(() => {
 		document.title = "Terry Biesboer | Portfolio";
 	}, []);
@@ -20,14 +27,33 @@ const Homepage = (props) => {
 					<div
 						className="image"
 						style={{ backgroundImage: `url(${avatar})` }}
+						role="img"
+						aria-label="Terry Biesboer"
 					></div>
 				</div>
 				<div className="bio">
-					<h1>Terry Biesboer</h1>
+					<h1>
+						<span className="accent">portfolio of Terry Biesboer</span> — {formattedDate}
+					</h1>
 					<p>
-						I'm Terry, a passionate Full-Stack Developer from San Diego,
-						CA
+						Hi, I&apos;m <strong>Terry Biesboer</strong> — a passionate full-stack
+						developer based in <span className="accent">San Diego, CA</span>.
 					</p>
+					<p>
+						I&apos;m currently completing my Bachelor&apos;s in Computer Science
+						for Web Design &amp; Development at <span className="accent">Full Sail University</span> and
+						actively seeking opportunities in web development and related fields.
+					</p>
+					<p>
+						This portfolio is a place to share the projects I&apos;ve built, the
+						decisions behind them, and a snapshot of what I&apos;m focused on as
+						I keep building for the web.
+					</p>
+					<div className="homeLinks">
+						<Link className="accentLink" to="/about">About me →</Link>
+						<Link className="accentLink" to="/portfolio">View projects →</Link>
+						<Link className="accentLink" to="/contact">Get in touch →</Link>
+					</div>
 					<div className="social">
 						<a
 							href="https://www.facebook.com"
@@ -48,7 +74,7 @@ const Homepage = (props) => {
 							<FaInstagram />
 						</a>
 						<a
-							href="https://www.github.com"
+							href="https://github.com/biesboerTerry-FS"
 							className="socialLinks"
 							aria-label="GitHub"
 							target="_blank"
