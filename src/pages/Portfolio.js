@@ -60,6 +60,8 @@ const Portfolio = () => {
 			? "🔜 planned"
 			: "—";
 
+	const isBackendView = (view) => /back/i.test(view.label);
+
 	return (
 		<div className="page">
 			<header className="pageHeader">
@@ -187,7 +189,7 @@ const Portfolio = () => {
 
 							<div className="modalLinks">
 								<div className="modalLinksLeft">
-									{selectedProject.views.map((view) => (
+									{selectedProject.views.filter((view) => !isBackendView(view)).map((view) => (
 										<a
 											key={`${view.label}-${view.url}`}
 											href={view.url}
@@ -198,6 +200,9 @@ const Portfolio = () => {
 											{view.label}
 										</a>
 									))}
+									{selectedProject.views.some(isBackendView) && (
+										<span className="backendNote">Backend available / running</span>
+									)}
 									{selectedProject.missing.map((type) => (
 										<span key={type} className="modalLink planned" title={`${selectedProject.title} - ${type}: needs to be created`}>
 											{type.charAt(0).toUpperCase() + type.slice(1)} (planned)

@@ -1222,3 +1222,72 @@ img {
 		color: $offWhite;
 	}
 }
+
+/* Site header — separates the menu button from page content */
+.siteHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 150px;
+	z-index: 450;
+	padding: 22px 30px;
+	pointer-events: none;
+
+	@media (max-width: 768px) {
+		right: 0;
+		padding: 22px 90px 22px 20px;
+	}
+}
+
+.siteBrand {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	pointer-events: auto;
+	color: $offWhite;
+	text-decoration: none;
+	transition: opacity 0.3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		opacity: 0.75;
+	}
+}
+
+.siteBrandMark {
+	display: grid;
+	place-items: center;
+	width: 34px;
+	height: 34px;
+	flex: 0 0 34px;
+	border: 2px solid $pink;
+	border-radius: 100%;
+	color: $pink;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.siteBrandName {
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	@media (max-width: 768px) {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+}
+
+/* Backend availability note (replaces backend project links) */
+.backendNote {
+	display: inline-flex;
+	align-items: center;
+	padding: 8px 14px;
+	border: 1px dashed rgba(255, 79, 163, 0.6);
+	border-radius: 4px;
+	color: #bbb;
+	font-size: 14px;
+	line-height: 1.3;
+}
