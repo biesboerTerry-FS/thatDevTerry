@@ -107,6 +107,7 @@ export const projects = [
 		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
 		image: pokeAppImage,
 		views: [
+			{ label: "Front", url: "https://thepokeapp.vercel.app" },
 			{ label: "Mobile", url: "https://thepokeapp.vercel.app" },
 		],
 		missing: [],
