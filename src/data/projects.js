@@ -1,4 +1,3 @@
-import placeholderImage from "../images/placeholder.svg";
 import tomatoImage from "../images/tomato.jpg";
 import projectOneImage from "../images/project-one.jpg";
 import portfolioImage from "../images/portfolio.jpg";
