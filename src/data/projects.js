@@ -5,6 +5,8 @@ import portfolioImage from "../images/portfolio.jpg";
 import foreverImage from "../images/forever.jpg";
 import pokeAppImage from "../images/thepokeapp.jpg";
 import prescriptoImage from "../images/prescripto.jpg";
+import quickStayImage from "../images/quickstayhotels.jpg";
+import holisticAsFImage from "../images/holisticasf.jpg";
 
 // Selected work and case studies.
 export const projects = [
@@ -169,52 +171,54 @@ export const projects = [
 	{
 		title: "QuickStayHotels",
 		role: "Full-Stack Development",
-		timeframe: "In Progress",
-		stack: ["React", "JavaScript"],
+		timeframe: "2026",
+		stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "Expo", "Vercel"],
 		summary:
-			"A hotel booking and reservation project currently in development.",
+			"A hotel booking platform with a guest-facing site, hotel owner dashboard, backend API, and mobile web experience.",
 		problem:
-			"The live demo is still being prepared, so the project is tracked via its repository.",
+			"Travelers need a simple way to browse rooms and book stays, while hotel owners need tools to manage listings, bookings, and offers.",
 		contributions: [
-			"Scaffolding the booking and reservation workflow.",
-			"Building the frontend interface for searching and selecting stays.",
+			"Built a React/Vite frontend for browsing rooms, offers, and booking flows.",
+			"Implemented hotel owner routes for dashboard, room management, bookings, offers, and profile.",
+			"Developed an Express/MongoDB API and deployed separate client, server, owner, and mobile web projects to Vercel.",
 		],
 		outcomes: [
-			"Repository established; live demo coming soon.",
+			"Live Vercel deployments for the client, owner, server, and mobile web experiences (server requires production environment variables to fully operate).",
 		],
 		repo: "https://github.com/biesboerTerry-FS/QuickStayHotels",
-		image: placeholderImage,
+		image: quickStayImage,
 		views: [
-			{ label: "Front", url: "https://quickstayhotels-client-f6mf76dwz-terry-biesboers-projects.vercel.app" },
-			{ label: "Back", url: "https://quickstayhotels-server-qsz6tbj1a-terry-biesboers-projects.vercel.app" },
-			{ label: "Admin", url: "https://quickstayhotels-admin-otrlup00f-terry-biesboers-projects.vercel.app" },
-			{ label: "Mobile", url: "https://quickstayhotels-mobile-h8fr2ntqg-terry-biesboers-projects.vercel.app" },
+			{ label: "Front", url: "https://quickstayhotels-client.vercel.app" },
+			{ label: "Back", url: "https://quickstayhotels-server.vercel.app" },
+			{ label: "Owner", url: "https://quickstayhotels-client.vercel.app/owner" },
+			{ label: "Mobile", url: "https://quickstayhotels-mobile.vercel.app" },
 		],
 		missing: [],
 	},
 	{
 		title: "HolisticAsF",
 		role: "Full-Stack Development",
-		timeframe: "In Progress",
-		stack: ["React", "JavaScript"],
+		timeframe: "2026",
+		stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "Expo", "Vercel"],
 		summary:
-			"A holistic wellness project currently in development.",
+			"A holistic wellness storefront with product browsing, cart and checkout flows, admin management, backend API, and mobile web experience.",
 		problem:
-			"The live demo is still being prepared, so the project is tracked via its repository.",
+			"A wellness brand needs a cohesive storefront and admin workflow to present products, manage inventory/orders, and support customers across devices.",
 		contributions: [
-			"Planning the wellness-focused feature set and user experience.",
-			"Building the frontend foundation for the project.",
+			"Built a React/Vite client for browsing products, categories, cart, and account flows.",
+			"Implemented admin routes for dashboard, schedule, inventory, and orders.",
+			"Developed an Express/MongoDB backend and deployed client, server, admin, and mobile web projects to Vercel.",
 		],
 		outcomes: [
-			"Repository established; live demo coming soon.",
+			"Live Vercel deployments for the client, admin, server, and mobile web experiences.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/HolisticAsF",
-		image: placeholderImage,
+		image: holisticAsFImage,
 		views: [
-			{ label: "Front", url: "https://holisticasf-client-npki4n8q4-terry-biesboers-projects.vercel.app" },
-			{ label: "Back", url: "https://holisticasf-server-gggdx8mz9-terry-biesboers-projects.vercel.app" },
-			{ label: "Admin", url: "https://holisticasf-admin-bsm3l67qg-terry-biesboers-projects.vercel.app" },
-			{ label: "Mobile", url: "https://holisticasf-mobile-fafg4dixp-terry-biesboers-projects.vercel.app" },
+			{ label: "Front", url: "https://holisticasf-client.vercel.app" },
+			{ label: "Back", url: "https://holisticasf-server.vercel.app" },
+			{ label: "Admin", url: "https://holisticasf-client.vercel.app/admin" },
+			{ label: "Mobile", url: "https://holisticasf-mobile.vercel.app" },
 		],
 		missing: [],
 	},
