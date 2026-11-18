@@ -48,7 +48,7 @@ const Overlay = (props) => {
 							data-number="3"
 							onClick={props.onClose}
 						>
-							more
+							now
 						</NavLink>
 					</div>
 					<div className="navLink">
