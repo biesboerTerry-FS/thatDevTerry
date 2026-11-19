@@ -1,5 +1,7 @@
 import portfolioImage from "../images/portfolio.jpg";
-import quickStayImage from "../images/quickstayhotels.jpg";
+import quickStayDarkImage from "../images/quickstayhotels-dark.jpg";
+import quickStayLightImage from "../images/quickstayhotels-light.jpg";
+import quickStayMobileImage from "../images/quickstayhotels-mobile.jpg";
 import lindberghDarkImage from "../images/lindbergh-dark.jpg";
 import lindberghLightImage from "../images/lindbergh-light.jpg";
 import lindberghMobileImage from "../images/lindbergh-mobile.jpg";
@@ -206,7 +208,9 @@ export const projects = [
 			"Live Vercel deployments for the client, owner, server, and mobile web experiences (server requires production environment variables to fully operate).",
 		],
 		repo: "https://github.com/biesboerTerry-FS/QuickStayHotels",
-		image: quickStayImage,
+		image: quickStayDarkImage,
+		lightImage: quickStayLightImage,
+		mobileImage: quickStayMobileImage,
 		views: [
 			{ label: "Front", url: "https://quickstayhotels-client.vercel.app" },
 			{ label: "Back", url: "https://quickstayhotels-server.vercel.app" },
