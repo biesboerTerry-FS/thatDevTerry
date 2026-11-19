@@ -27,7 +27,7 @@ const Overlay = (props) => {
 						<NavLink
 							to="/"
 							end
-							data-number="1"
+							data-number="I"
 							onClick={props.onClose}
 						>
 							home
@@ -36,7 +36,7 @@ const Overlay = (props) => {
 					<div className="navLink">
 						<NavLink
 							to="/about"
-							data-number="2"
+							data-number="II"
 							onClick={props.onClose}
 						>
 							about
@@ -45,7 +45,7 @@ const Overlay = (props) => {
 					<div className="navLink">
 						<NavLink
 							to="/work"
-							data-number="3"
+							data-number="III"
 							onClick={props.onClose}
 						>
 							now
@@ -54,7 +54,7 @@ const Overlay = (props) => {
 					<div className="navLink">
 						<NavLink
 							to="/portfolio"
-							data-number="4"
+							data-number="IV"
 							onClick={props.onClose}
 						>
 							portfolio
@@ -63,7 +63,7 @@ const Overlay = (props) => {
 					<div className="navLink">
 						<NavLink
 							to="/contact"
-							data-number="5"
+							data-number="V"
 							onClick={props.onClose}
 						>
 							contact
@@ -299,7 +299,7 @@ export default Overlay;
 // 							exact
 // 							to="/"
 // 							activeClassName="active"
-// 							data-number="1"
+// 							data-number="I"
 // 						>
 // 							home
 // 						</NavLink>
@@ -308,7 +308,7 @@ export default Overlay;
 // 						<NavLink
 // 							to="/about"
 // 							activeClassName="active"
-// 							data-number="2"
+// 							data-number="II"
 // 						>
 // 							about
 // 						</NavLink>
@@ -317,7 +317,7 @@ export default Overlay;
 // 						<NavLink
 // 							to="/work"
 // 							activeClassName="active"
-// 							data-number="3"
+// 							data-number="III"
 // 						>
 // 							work
 // 						</NavLink>
@@ -326,7 +326,7 @@ export default Overlay;
 // 						<NavLink
 // 							to="/portfolio"
 // 							activeClassName="active"
-// 							data-number="4"
+// 							data-number="IV"
 // 						>
 // 							portfolio
 // 						</NavLink>
@@ -335,7 +335,7 @@ export default Overlay;
 // 						<NavLink
 // 							to="/contact"
 // 							activeClassName="active"
-// 							data-number="5"
+// 							data-number="V"
 // 						>
 // 							contact
 // 						</NavLink>
