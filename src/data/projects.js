@@ -1,11 +1,22 @@
-import tomatoImage from "../images/tomato.jpg";
-import projectOneImage from "../images/project-one.jpg";
 import portfolioImage from "../images/portfolio.jpg";
-import foreverImage from "../images/forever.jpg";
-import pokeAppImage from "../images/thepokeapp.jpg";
-import prescriptoImage from "../images/prescripto.jpg";
 import quickStayImage from "../images/quickstayhotels.jpg";
-import holisticAsFImage from "../images/holisticasf.jpg";
+import lindberghDarkImage from "../images/lindbergh-dark.jpg";
+import lindberghLightImage from "../images/lindbergh-light.jpg";
+import lindberghMobileImage from "../images/lindbergh-mobile.jpg";
+import foreverDarkImage from "../images/forever-dark.jpg";
+import foreverLightImage from "../images/forever-light.jpg";
+import foreverMobileImage from "../images/forever-mobile.jpg";
+import tomatoDarkImage from "../images/tomato-dark.jpg";
+import tomatoLightImage from "../images/tomato-light.jpg";
+import tomatoMobileImage from "../images/tomato-mobile.jpg";
+import prescriptoDarkImage from "../images/prescripto-dark.jpg";
+import prescriptoLightImage from "../images/prescripto-light.jpg";
+import prescriptoMobileImage from "../images/prescripto-mobile.jpg";
+import holisticasfDarkImage from "../images/holisticasf-dark.jpg";
+import holisticasfLightImage from "../images/holisticasf-light.jpg";
+import holisticasfMobileImage from "../images/holisticasf-mobile.jpg";
+import pokeAppMobileImage from "../images/thepokeapp-mobile.jpg";
+import pokeAppImage from "../images/thepokeapp.jpg";
 
 // Selected work and case studies.
 export const projects = [
@@ -27,7 +38,9 @@ export const projects = [
 			"A live site visitors can browse and an admin experience for content management.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/LindberghUltimateFrisbee",
-		image: projectOneImage,
+		image: lindberghDarkImage,
+		lightImage: lindberghLightImage,
+		mobileImage: lindberghMobileImage,
 		views: [
 			{ label: "Front", url: "https://lindberghultimatefrisbee-terry-biesboers-projects.vercel.app" },
 			{ label: "Admin", url: "https://lindberghultimatefrisbee-terry-biesboers-projects.vercel.app/admin/login" },
@@ -78,7 +91,9 @@ export const projects = [
 			"A functioning e-commerce frontend, admin panel, mobile app, and backend deployed to Vercel.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/Forever",
-		image: foreverImage,
+		image: foreverDarkImage,
+		lightImage: foreverLightImage,
+		mobileImage: foreverMobileImage,
 		views: [
 			{ label: "Front", url: "https://forever-frontend-gamma-wheat.vercel.app" },
 			{ label: "Back", url: "https://forever-backend-neon-eta.vercel.app" },
@@ -106,6 +121,7 @@ export const projects = [
 		],
 		repo: "https://github.com/biesboerTerry-FS/ThePokeApp",
 		image: pokeAppImage,
+		mobileImage: pokeAppMobileImage,
 		views: [
 			{ label: "Front", url: "https://thepokeapp.vercel.app" },
 			{ label: "Mobile", url: "https://thepokeapp.vercel.app" },
@@ -131,7 +147,9 @@ export const projects = [
 			"A live ordering site, admin dashboard, and backend API for ongoing operations.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/Tomato",
-		image: tomatoImage,
+		image: tomatoDarkImage,
+		lightImage: tomatoLightImage,
+		mobileImage: tomatoMobileImage,
 		views: [
 			{ label: "Front", url: "https://tomato-dqkd.vercel.app" },
 			{ label: "Back", url: "https://tomato-green-nine.vercel.app" },
@@ -158,7 +176,9 @@ export const projects = [
 			"A multi-role platform spanning web, admin, and mobile surfaces.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/Prescripto",
-		image: prescriptoImage,
+		image: prescriptoDarkImage,
+		lightImage: prescriptoLightImage,
+		mobileImage: prescriptoMobileImage,
 		views: [
 			{ label: "Front", url: "https://frontend-hg1m8ls5a-terry-biesboers-projects.vercel.app" },
 			{ label: "Back", url: "https://backend-6f0maqq3u-terry-biesboers-projects.vercel.app" },
@@ -213,7 +233,9 @@ export const projects = [
 			"Live Vercel deployments for the client, admin, server, and mobile web experiences.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/HolisticAsF",
-		image: holisticAsFImage,
+		image: holisticasfDarkImage,
+		lightImage: holisticasfLightImage,
+		mobileImage: holisticasfMobileImage,
 		views: [
 			{ label: "Front", url: "https://holisticasf-client.vercel.app" },
 			{ label: "Back", url: "https://holisticasf-server.vercel.app" },

@@ -3,6 +3,7 @@ import { projects } from "../data/projects";
 
 const Portfolio = () => {
 	const [selectedProject, setSelectedProject] = useState(null);
+	const [previewMode, setPreviewMode] = useState("dark");
 	const triggerRef = useRef(null);
 	const modalRef = useRef(null);
 	const closeButtonRef = useRef(null);
@@ -62,6 +63,13 @@ const Portfolio = () => {
 
 	const isBackendView = (view) => /back/i.test(view.label);
 
+	const getPreviewImage = (project, mode) => {
+		if (!project) return "";
+		if (mode === "light" && project.lightImage) return project.lightImage;
+		if (mode === "mobile" && project.mobileImage) return project.mobileImage;
+		return project.image;
+	};
+
 	return (
 		<div className="page">
 			<header className="pageHeader">
@@ -88,6 +96,7 @@ const Portfolio = () => {
 						className="projectCard"
 						onClick={(event) => {
 							triggerRef.current = event.currentTarget;
+							setPreviewMode("dark");
 							setSelectedProject(project);
 						}}
 					>
@@ -130,14 +139,41 @@ const Portfolio = () => {
 						>
 							×
 						</button>
+						<div className="previewTabs" role="group" aria-label="Preview mode">
+							<button
+								type="button"
+								className={previewMode === "dark" ? "active" : ""}
+								onClick={() => setPreviewMode("dark")}
+							>
+								Dark
+							</button>
+							{selectedProject.lightImage && (
+								<button
+									type="button"
+									className={previewMode === "light" ? "active" : ""}
+									onClick={() => setPreviewMode("light")}
+								>
+									Light
+								</button>
+							)}
+							{selectedProject.mobileImage && (
+								<button
+									type="button"
+									className={previewMode === "mobile" ? "active" : ""}
+									onClick={() => setPreviewMode("mobile")}
+								>
+									Mobile
+								</button>
+							)}
+						</div>
 						<div
 							className="modalImageWrapper"
 							ref={modalImageWrapperRef}
 						>
 							<img
-								className="modalImage"
-								src={selectedProject.image}
-								alt={selectedProject.title}
+								className={previewMode === "mobile" ? "modalImage mobilePreview" : "modalImage"}
+								src={getPreviewImage(selectedProject, previewMode)}
+								alt={`${selectedProject.title} ${previewMode} preview`}
 							/>
 							<button
 								type="button"

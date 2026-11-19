@@ -769,10 +769,40 @@ img {
 	background-color: $menuBg;
 }
 
+.previewTabs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 16px 24px 0;
+
+	button {
+		padding: 6px 14px;
+		border: 1px solid $pink;
+		border-radius: 999px;
+		background: transparent;
+		color: $pink;
+		font: inherit;
+		font-size: 13px;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+		&:hover,
+		&.active {
+			background-color: $pink;
+			color: $menuBg;
+		}
+	}
+}
+
 .modalImage {
 	width: 100%;
 	height: auto;
 	display: block;
+
+	&.mobilePreview {
+		max-width: 420px;
+		margin: 0 auto;
+	}
 }
 
 .scrollSiteOverlay {
