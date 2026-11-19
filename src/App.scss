@@ -515,7 +515,7 @@ img {
 
 		&:hover,
 		&.active {
-			color: $pink;
+			color: #b31752;
 		}
 	}
 
@@ -1000,7 +1000,8 @@ img {
 }
 
 .accentLink {
-	text-decoration: none;
+	text-decoration: underline;
+	text-underline-offset: 3px;
 	border-bottom: 1px solid transparent;
 	transition: border-color 0.3s ease-in-out;
 

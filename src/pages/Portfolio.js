@@ -139,9 +139,11 @@ const Portfolio = () => {
 						>
 							×
 						</button>
-						<div className="previewTabs" role="group" aria-label="Preview mode">
+						<div className="previewTabs" role="tablist" aria-label="Preview mode">
 							<button
 								type="button"
+								role="tab"
+								aria-selected={previewMode === "dark"}
 								className={previewMode === "dark" ? "active" : ""}
 								onClick={() => setPreviewMode("dark")}
 							>
@@ -150,6 +152,8 @@ const Portfolio = () => {
 							{selectedProject.lightImage && (
 								<button
 									type="button"
+									role="tab"
+									aria-selected={previewMode === "light"}
 									className={previewMode === "light" ? "active" : ""}
 									onClick={() => setPreviewMode("light")}
 								>
@@ -159,6 +163,8 @@ const Portfolio = () => {
 							{selectedProject.mobileImage && (
 								<button
 									type="button"
+									role="tab"
+									aria-selected={previewMode === "mobile"}
 									className={previewMode === "mobile" ? "active" : ""}
 									onClick={() => setPreviewMode("mobile")}
 								>
