@@ -70,7 +70,7 @@ export const projects = [
 		repo: "https://github.com/biesboerTerry-FS/thatDevTerry.git",
 		image: portfolioImage,
 		views: [
-			{ label: "Front", url: "https://diary-of-the-lifted-gifted.vercel.app" },
+			{ label: "Front", url: "https://github.com/biesboerTerry-FS/Diary" },
 		],
 		missing: [],
 	},
