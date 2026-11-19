@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import {
-	FaFacebook,
-	FaInstagram,
-	FaGithub,
-	FaTwitter,
-	FaSlack,
-} from "react-icons/fa";
+// import {
+// 	FaFacebook,
+// 	FaInstagram,
+// 	FaGithub,
+// 	FaTwitter,
+// 	FaSlack,
+// } from "react-icons/fa";
 import avatar from "../images/terry.jpeg";
 
 const Homepage = () => {
@@ -48,7 +48,7 @@ const Homepage = () => {
 						<Link className="accentLink" to="/portfolio">View projects →</Link>
 						<Link className="accentLink" to="/contact">Get in touch →</Link>
 					</div>
-					<div className="social">
+					{/* <div className="social">
 						<a
 							href="https://www.facebook.com"
 							className="socialLinks"
@@ -94,7 +94,7 @@ const Homepage = () => {
 						>
 							<FaSlack />
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

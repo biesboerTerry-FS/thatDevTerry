@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {
-	FaFacebook,
-	FaInstagram,
-	FaGithub,
-	FaTwitter,
-	FaSlack,
-} from "react-icons/fa";
+// import {
+// 	FaFacebook,
+// 	FaInstagram,
+// 	FaGithub,
+// 	FaTwitter,
+// 	FaSlack,
+// } from "react-icons/fa";
 
 const Overlay = (props) => {
 	return (
@@ -72,7 +72,7 @@ const Overlay = (props) => {
 				</div>
 			</div>
 
-			<div
+			{/* <div
 				className={props.toggleData ? "navSocial active" : "navSocial"}
 			>
 				<a
@@ -120,7 +120,7 @@ const Overlay = (props) => {
 				>
 					<FaSlack />
 				</a>
-			</div>
+			</div> */}
 
 			<div
 				className={
