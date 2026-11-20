@@ -5,7 +5,6 @@ import quickStayDarkImage from "../images/quickstayhotels-dark.jpg";
 import quickStayLightImage from "../images/quickstayhotels-light.jpg";
 import quickStayMobileImage from "../images/quickstayhotels-mobile.jpg";
 import lindberghDarkImage from "../images/lindbergh-dark.jpg";
-import lindberghLightImage from "../images/lindbergh-light.jpg";
 import lindberghMobileImage from "../images/lindbergh-mobile.jpg";
 import foreverDarkImage from "../images/forever-dark.jpg";
 import foreverLightImage from "../images/forever-light.jpg";
@@ -43,7 +42,6 @@ export const projects = [
 		],
 		repo: "https://github.com/biesboerTerry-FS/LindberghUltimateFrisbee",
 		image: lindberghDarkImage,
-		lightImage: lindberghLightImage,
 		mobileImage: lindberghMobileImage,
 		views: [
 			{ label: "Front", url: "https://lindberghultimatefrisbee-terry-biesboers-projects.vercel.app" },
@@ -53,7 +51,7 @@ export const projects = [
 		missing: [],
 	},
 	{
-		title: "Terry Biesboer Portfolio",
+		title: "diary of the Lifted Gifted",
 		role: "Design & Frontend Development",
 		timeframe: "2026",
 		stack: ["React", "React Router", "Sass", "JavaScript", "Vercel"],
