@@ -56,18 +56,18 @@ export const projects = [
 		timeframe: "2026",
 		stack: ["React", "React Router", "Sass", "JavaScript", "Vercel"],
 		summary:
-			"A personal portfolio site that presents selected work, background, and contact details in a focused single-page experience.",
+			"A personal diary and portfolio that documents what I'm learning, shares projects I've built, and reflects on the craft of building for the web.",
 		problem:
-			"A clear, polished portfolio was needed to showcase projects, education, and availability in one easy-to-navigate place.",
+			"A single home was needed for day-to-day notes, project write-ups, and background in one easy-to-navigate place.",
 		contributions: [
-			"Built a responsive React single-page app with routing for portfolio sections.",
-			"Styled the interface with Sass and component-based layouts for consistent visual design.",
-			"Deployed the site to Vercel with a dedicated /portfolio route.",
+			"Built a responsive React single-page app with routing for diary sections.",
+			"Styled the interface with component-based layouts for a consistent reading experience.",
+			"Deployed the site to Vercel with a lightweight writing and archive flow.",
 		],
 		outcomes: [
-			"A live portfolio that introduces Terry Biesboer and links to selected projects.",
+			"A live diary that introduces Terry Biesboer and links to selected projects.",
 		],
-		repo: "https://github.com/biesboerTerry-FS/thatDevTerry.git",
+		repo: "https://github.com/biesboerTerry-FS/diaryOfTheLiftedGifted.git",
 		image: diaryDarkImage,
 		lightImage: diaryLightImage,
 		mobileImage: diaryMobileImage,
