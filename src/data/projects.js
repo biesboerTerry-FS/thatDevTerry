@@ -1,5 +1,6 @@
-import portfolioImage from "../images/portfolio-light.jpg";
-import portfolioMobileImage from "../images/portfolio-mobile.jpg";
+import diaryDarkImage from "../images/diary-dark.jpg";
+import diaryLightImage from "../images/diary-light.jpg";
+import diaryMobileImage from "../images/diary-mobile.jpg";
 import quickStayDarkImage from "../images/quickstayhotels-dark.jpg";
 import quickStayLightImage from "../images/quickstayhotels-light.jpg";
 import quickStayMobileImage from "../images/quickstayhotels-mobile.jpg";
@@ -69,8 +70,9 @@ export const projects = [
 			"A live portfolio that introduces Terry Biesboer and links to selected projects.",
 		],
 		repo: "https://github.com/biesboerTerry-FS/thatDevTerry.git",
-		image: portfolioImage,
-		mobileImage: portfolioMobileImage,
+		image: diaryDarkImage,
+		lightImage: diaryLightImage,
+		mobileImage: diaryMobileImage,
 		views: [
 			{ label: "Front", url: "https://diary-of-terry.vercel.app" },
 		],
