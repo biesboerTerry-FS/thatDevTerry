@@ -1,4 +1,5 @@
-import portfolioImage from "../images/portfolio.jpg";
+import portfolioImage from "../images/portfolio-light.jpg";
+import portfolioMobileImage from "../images/portfolio-mobile.jpg";
 import quickStayDarkImage from "../images/quickstayhotels-dark.jpg";
 import quickStayLightImage from "../images/quickstayhotels-light.jpg";
 import quickStayMobileImage from "../images/quickstayhotels-mobile.jpg";
@@ -18,7 +19,7 @@ import holisticasfDarkImage from "../images/holisticasf-dark.jpg";
 import holisticasfLightImage from "../images/holisticasf-light.jpg";
 import holisticasfMobileImage from "../images/holisticasf-mobile.jpg";
 import pokeAppMobileImage from "../images/thepokeapp-mobile.jpg";
-import pokeAppImage from "../images/thepokeapp.jpg";
+import pokeAppImage from "../images/thepokeapp-light.jpg";
 
 // Selected work and case studies.
 export const projects = [
@@ -69,6 +70,7 @@ export const projects = [
 		],
 		repo: "https://github.com/biesboerTerry-FS/thatDevTerry.git",
 		image: portfolioImage,
+		mobileImage: portfolioMobileImage,
 		views: [
 			{ label: "Front", url: "https://diary-of-terry.vercel.app" },
 		],
