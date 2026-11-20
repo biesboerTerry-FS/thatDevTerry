@@ -19,14 +19,6 @@ const Navigation = () => {
 	return (
 		<>
 			<div className="navWrapper">
-				{!isToggled && (
-					<div className="siteHeader">
-						<NavLink to="/" className="siteBrand" onClick={() => setIsToggled(false)}>
-							<img className="siteBrandMark" src={logo} alt="" aria-hidden="true" />
-							<span className="siteBrandName">Terry Biesboer</span>
-						</NavLink>
-					</div>
-				)}
 				{isToggled && (
 					<div className="logo menuLogo">
 						<img src={logo} alt="logo" />
