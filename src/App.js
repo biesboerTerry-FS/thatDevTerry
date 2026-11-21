@@ -1,5 +1,8 @@
+import { useState, useCallback } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
+import "./components/Intro.scss";
+import Intro, { shouldShowIntro, markIntroSeen } from "./components/Intro";
 import Homepage from "./components/Homepage";
 import Navigation from "./components/Navigation";
 import About from "./pages/About";
@@ -9,8 +12,15 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 function App() {
+	const [showIntro, setShowIntro] = useState(() => shouldShowIntro());
+	const finishIntro = useCallback(() => {
+		markIntroSeen();
+		setShowIntro(false);
+	}, []);
+
 	return (
 		<BrowserRouter>
+			{showIntro ? <Intro onDone={finishIntro} /> : null}
 			<div className="container">
 				<Navigation />
 				<main>

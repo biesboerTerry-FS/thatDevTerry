@@ -1,0 +1,132 @@
+.intro {
+	position: fixed;
+	inset: 0;
+	z-index: 2000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: $menuBg;
+	overflow: hidden;
+	animation: introOut 0.6s ease 4.2s forwards;
+}
+
+.intro-duck {
+	width: min(260px, 55vw);
+	height: min(260px, 55vw);
+	object-fit: contain;
+	border-radius: 50%;
+	animation: duckInOut 1.7s ease forwards;
+}
+
+.intro-ring {
+	position: absolute;
+	width: min(280px, 60vw);
+	height: min(280px, 60vw);
+	border: 3px solid $pink;
+	border-radius: 50%;
+	animation: ringExpand 1.2s ease-out forwards;
+}
+
+.intro-code {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	opacity: 0;
+	transform: translateY(10px);
+	font-family: "Fira Code", "SFMono-Regular", "Menlo", "Consolas", monospace;
+	font-size: clamp(1.4rem, 5.5vw, 3.2rem);
+	font-weight: 600;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	color: $offWhite;
+
+	&.intro-code-active {
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity 0.3s ease, transform 0.3s ease;
+	}
+}
+
+.intro-prompt {
+	color: $pink;
+}
+
+.intro-typed {
+	color: $offWhite;
+}
+
+.intro-caret {
+	display: inline-block;
+	width: 0.55em;
+	height: 1.05em;
+	background-color: $pink;
+	vertical-align: -0.12em;
+	animation: caretBlink 0.7s steps(1) infinite;
+}
+
+.intro-typing .intro-duck {
+	animation: duckCollapse 0.7s ease forwards;
+}
+
+@keyframes ringExpand {
+	0% {
+		transform: scale(0.45);
+		opacity: 0;
+	}
+	35% {
+		opacity: 0.85;
+	}
+	100% {
+		transform: scale(1.8);
+		opacity: 0;
+	}
+}
+
+@keyframes duckInOut {
+	0% {
+		transform: scale(0.55) rotate(-8deg);
+		opacity: 0;
+	}
+	30% {
+		transform: scale(1) rotate(0);
+		opacity: 1;
+	}
+	70% {
+		transform: scale(1) rotate(0);
+		opacity: 1;
+	}
+}
+
+@keyframes duckCollapse {
+	0% {
+		transform: scale(1) rotate(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+	100% {
+		transform: scale(0.2) translateY(-8px);
+		opacity: 0;
+		filter: blur(8px);
+	}
+}
+
+@keyframes caretBlink {
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes introOut {
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.intro {
+		display: none;
+	}
+}
