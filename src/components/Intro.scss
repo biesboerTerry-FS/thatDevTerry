@@ -1,3 +1,8 @@
+// Local palette (kept in sync with App.scss) so this file compiles standalone.
+$intro-pink: #ff4fa3;
+$intro-bg: #29251c;
+$intro-cream: #f6f2ed;
+
 .intro {
 	position: fixed;
 	inset: 0;
@@ -6,7 +11,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: $menuBg;
+	background-color: $intro-bg;
 	overflow: hidden;
 	animation: introOut 0.6s ease 4.2s forwards;
 }
@@ -23,7 +28,7 @@
 	position: absolute;
 	width: min(280px, 60vw);
 	height: min(280px, 60vw);
-	border: 3px solid $pink;
+	border: 3px solid $intro-pink;
 	border-radius: 50%;
 	animation: ringExpand 1.2s ease-out forwards;
 }
@@ -40,7 +45,7 @@
 	font-weight: 600;
 	letter-spacing: 1px;
 	white-space: nowrap;
-	color: $offWhite;
+	color: $intro-cream;
 
 	&.intro-code-active {
 		opacity: 1;
@@ -50,18 +55,18 @@
 }
 
 .intro-prompt {
-	color: $pink;
+	color: $intro-pink;
 }
 
 .intro-typed {
-	color: $offWhite;
+	color: $intro-cream;
 }
 
 .intro-caret {
 	display: inline-block;
 	width: 0.55em;
 	height: 1.05em;
-	background-color: $pink;
+	background-color: $intro-pink;
 	vertical-align: -0.12em;
 	animation: caretBlink 0.7s steps(1) infinite;
 }
